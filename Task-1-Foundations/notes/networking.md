@@ -1,181 +1,199 @@
-NETWORKING FUNDAMENTALS
+````markdown
+# Networking Fundamentals
 
-Objective
+> Practical networking fundamentals and command-line verification for cybersecurity labs.
+
+---
+
+## 🎯 Objective
 
 Understand the networking concepts, protocols, and command-line utilities commonly used in cybersecurity.
 
+---
 
-1. CORE NETWORKING CONCEPTS
+## 1. Core Networking Concepts
 
-IP Address
+### IP Address
 
-An IP address identifies a network interface on an IP network.
+An **IP address** identifies a network interface on an IP network.
 
-Example:
+**Example:**
+
+```text
 192.168.1.10
+````
 
+### MAC Address
 
-MAC Address
+A **MAC address** identifies a network interface at the Data Link layer.
 
-A MAC address identifies a network interface at the Data Link layer.
+**Example:**
 
-Example:
+```text
 00:11:22:33:44:55
+```
 
+### Subnet
 
-Subnet
+A **subnet** divides an IP network into smaller logical networks.
 
-A subnet divides an IP network into smaller logical networks.
+**Example:**
 
-Example:
+```text
 192.168.1.0/24
+```
 
+### Default Gateway
 
-Default Gateway
+The **default gateway** is the device used to forward traffic from the local network to other networks.
 
-The default gateway is the device used to forward traffic from the local network to other networks.
+### DNS
 
+**DNS (Domain Name System)** translates domain names into IP addresses.
 
-DNS
+**Example:**
 
-DNS (Domain Name System) translates domain names into IP addresses.
-
-Example:
+```text
 example.com → IP address
+```
 
+---
 
-2. COMMON NETWORK PROTOCOLS
+## 2. Common Network Protocols
 
-TCP
-Purpose: Reliable, connection-oriented transport.
+| Protocol  | Purpose                                    |
+| --------- | ------------------------------------------ |
+| **TCP**   | Reliable, connection-oriented transport    |
+| **UDP**   | Connectionless transport with low overhead |
+| **HTTP**  | Web communication                          |
+| **HTTPS** | HTTP secured using TLS                     |
+| **DNS**   | Domain-name resolution                     |
+| **SSH**   | Secure remote administration               |
 
-UDP
-Purpose: Connectionless transport with low overhead.
+---
 
-HTTP
-Purpose: Web communication.
+## 3. Network Commands
 
-HTTPS
-Purpose: HTTP secured using TLS.
+### `ip addr`
 
-DNS
-Purpose: Domain-name resolution.
-
-SSH
-Purpose: Secure remote administration.
-
-
-3. NETWORK COMMANDS
-
-ip addr
-
-Purpose:
 Displays network interfaces and assigned IP addresses.
 
-Command:
+```bash
 ip addr
+```
 
-Practical verification:
-Verified on the Kali Linux workstation.
+**Practical verification:** Verified on the Kali Linux workstation.
 
+---
 
-ping
+### `ping`
 
-Purpose:
 Tests basic network connectivity.
 
-Command:
+```bash
 ping -c 4 127.0.0.1
+```
 
-Result:
-4 packets transmitted, 4 received, 0% packet loss.
+**Result:** 4 packets transmitted, 4 received, 0% packet loss.
 
+---
 
-ss
+### `ss`
 
-Purpose:
 Displays network sockets and listening ports.
 
-Command:
+```bash
 ss -tuln
+```
 
-Practical verification:
-Command executed successfully on Kali Linux.
+**Practical verification:** Command executed successfully on Kali Linux.
 
+---
 
-traceroute
+### `traceroute`
 
-Purpose:
 Displays the network path to a destination.
 
-Command:
+```bash
 traceroute 8.8.8.8
+```
 
-Practical verification:
-Command executed successfully.
+**Practical verification:** Command executed successfully.
 
+---
 
-nslookup
+### `nslookup`
 
-Purpose:
 Queries DNS information for a domain.
 
-Command:
+```bash
 nslookup example.com
+```
 
-Practical verification:
-DNS resolution verified successfully.
+**Practical verification:** DNS resolution verified successfully.
 
+---
 
-ifconfig
+### `ifconfig`
 
-Purpose:
 Displays network interface configuration.
 
-Command:
+```bash
 ifconfig
+```
 
-Note:
-ifconfig is a legacy utility. The modern alternative is ip.
+> **Note:** `ifconfig` is a legacy utility. The modern alternative is `ip`.
 
+---
 
-4. NETWORKING IN CYBERSECURITY
+## 4. Networking in Cybersecurity
 
 Networking knowledge is essential for:
 
-- Network reconnaissance
-- Attack-surface identification
-- Traffic analysis
-- Service discovery
-- Incident investigation
-- Security troubleshooting
+* Network reconnaissance
+* Attack-surface identification
+* Traffic analysis
+* Service discovery
+* Incident investigation
+* Security troubleshooting
 
+---
 
-5. PRACTICAL EVIDENCE
+## 5. Practical Evidence
 
-The following screenshots document the commands executed on the Kali Linux workstation:
+The following screenshots document the commands executed on the **Kali Linux workstation**.
 
-01-ip-addr.png
-Command: ip addr
+| Evidence            | Command                |
+| ------------------- | ---------------------- |
+| `01-ip-addr.png`    | `ip addr`              |
+| `02-ping.png`       | `ping -c 4 127.0.0.1`  |
+| `03-ss.png`         | `ss -tuln`             |
+| `04-traceroute.png` | `traceroute 8.8.8.8`   |
+| `05-nslookup.png`   | `nslookup example.com` |
 
-02-ping.png
-Command: ping -c 4 127.0.0.1
+---
 
-03-ss.png
-Command: ss -tuln
+## 6. Verification Status
 
-04-traceroute.png
-Command: traceroute 8.8.8.8
+| Area                 | Status       |
+| -------------------- | ------------ |
+| Networking concepts  | ✅ Completed  |
+| Network protocols    | ✅ Documented |
+| Network commands     | ✅ Verified   |
+| Practical testing    | ✅ Completed  |
+| Evidence screenshots | ✅ Captured   |
+| Documentation        | ✅ Completed  |
 
-05-nslookup.png
-Command: nslookup example.com
+---
 
+## Conclusion
 
-STATUS
+The fundamental networking concepts and commonly used network utilities were documented and practically verified in the Kali Linux environment.
 
-Completed
+````
 
-- Networking fundamentals documented
-- Network commands practically verified
-- Practical evidence captured
-- Screenshots added to the repository
+**Important:** Isko paste karne ke baad save/exit karo. Phir:
+
+```bash
+git diff -- Task-1-Foundations/notes/networking.md
+````
