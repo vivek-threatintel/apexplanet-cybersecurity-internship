@@ -2,16 +2,16 @@ NETWORKING FUNDAMENTALS
 
 Objective
 
-Understand the networking concepts and commands commonly used in cybersecurity.
+Understand the networking concepts, protocols, and command-line utilities commonly used in cybersecurity.
 
 
-1. NETWORKING BASICS
+1. CORE NETWORKING CONCEPTS
 
 IP Address
 
-An IP address identifies a device/interface on an IP network.
+An IP address identifies a network interface on an IP network.
 
-IPv4 example:
+Example:
 192.168.1.10
 
 
@@ -33,121 +33,149 @@ Example:
 
 Default Gateway
 
-The default gateway is the device used to reach networks outside the local network.
+The default gateway is the device used to forward traffic from the local network to other networks.
 
 
 DNS
 
-DNS translates domain names into IP addresses.
+DNS (Domain Name System) translates domain names into IP addresses.
 
 Example:
 example.com → IP address
 
 
-2. IMPORTANT NETWORKING PROTOCOLS
+2. COMMON NETWORK PROTOCOLS
 
 TCP
-
-Connection-oriented transport protocol that provides reliable, ordered delivery.
+Purpose: Reliable, connection-oriented transport.
 
 UDP
-
-Connectionless transport protocol with lower overhead and no guarantee of delivery.
+Purpose: Connectionless transport with low overhead.
 
 HTTP
-
-Application-layer protocol commonly used for web communication.
+Purpose: Web communication.
 
 HTTPS
-
-HTTP protected using TLS encryption.
+Purpose: HTTP secured using TLS.
 
 DNS
-
-Protocol used for domain-name resolution.
+Purpose: Domain-name resolution.
 
 SSH
+Purpose: Secure remote administration.
 
-Protocol used for secure remote administration and command-line access.
 
-
-3. COMMON NETWORKING COMMANDS
+3. NETWORK COMMANDS
 
 ip addr
 
-Displays network interfaces and IP addresses.
+Purpose:
+Displays network interfaces and assigned IP addresses.
 
-Example:
+Command:
 ip addr
+
+Practical verification:
+Verified on the Kali Linux workstation.
 
 
 ping
 
+Purpose:
 Tests basic network connectivity.
 
-Example:
+Command:
 ping -c 4 127.0.0.1
+
+Result:
+4 packets transmitted, 4 received, 0% packet loss.
 
 
 ss
 
-Displays network sockets, connections, and listening ports.
+Purpose:
+Displays network sockets and listening ports.
 
-Example:
+Command:
 ss -tuln
+
+Practical verification:
+Command executed successfully on Kali Linux.
 
 
 traceroute
 
-Shows the network path between the local system and a destination.
+Purpose:
+Displays the network path to a destination.
 
-Example:
+Command:
 traceroute 8.8.8.8
+
+Practical verification:
+Command executed successfully.
 
 
 nslookup
 
-Queries DNS information.
+Purpose:
+Queries DNS information for a domain.
 
-Example:
+Command:
 nslookup example.com
 
+Practical verification:
+DNS resolution verified successfully.
 
-4. NETWORKING AND CYBERSECURITY
 
-Networking knowledge is important for:
+ifconfig
+
+Purpose:
+Displays network interface configuration.
+
+Command:
+ifconfig
+
+Note:
+ifconfig is a legacy utility. The modern alternative is ip.
+
+
+4. NETWORKING IN CYBERSECURITY
+
+Networking knowledge is essential for:
 
 - Network reconnaissance
+- Attack-surface identification
 - Traffic analysis
-- Identifying exposed services
-- Understanding attack surfaces
-- Investigating suspicious connections
-- Troubleshooting security incidents
+- Service discovery
+- Incident investigation
+- Security troubleshooting
 
 
-5. PRACTICAL VERIFICATION
+5. PRACTICAL EVIDENCE
 
-The networking commands will be verified on the Kali Linux workstation.
+The following screenshots document the commands executed on the Kali Linux workstation:
 
-Practical verification will cover:
+01-ip-addr.png
+Command: ip addr
 
-- Network interfaces and IP addresses
-- Local connectivity
-- Listening network sockets
-- Network path discovery
-- DNS resolution
+02-ping.png
+Command: ping -c 4 127.0.0.1
+
+03-ss.png
+Command: ss -tuln
+
+04-traceroute.png
+Command: traceroute 8.8.8.8
+
+05-nslookup.png
+Command: nslookup example.com
 
 
 STATUS
 
-Documentation prepared.
+Completed
 
-Practical verification completed:
-
-- ip addr — verified network interfaces and IP addresses
-- ping -c 4 127.0.0.1 — verified network connectivity
-- ss -tuln — verified TCP/UDP listening sockets
-- traceroute 8.8.8.8 — verified network path
-- nslookup example.com — verified DNS resolution
-
-Five practical verification screenshots are included in the screenshots directory.
+- Networking fundamentals documented
+- Network commands practically verified
+- Practical evidence captured
+- Screenshots added to the repository
