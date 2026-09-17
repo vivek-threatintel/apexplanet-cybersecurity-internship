@@ -1,4 +1,3 @@
-````markdown
 # Networking Fundamentals
 
 > Practical networking fundamentals and command-line verification for cybersecurity labs.
@@ -19,9 +18,7 @@ An **IP address** identifies a network interface on an IP network.
 
 **Example:**
 
-```text
-192.168.1.10
-````
+    192.168.1.10
 
 ### MAC Address
 
@@ -29,9 +26,7 @@ A **MAC address** identifies a network interface at the Data Link layer.
 
 **Example:**
 
-```text
-00:11:22:33:44:55
-```
+    00:11:22:33:44:55
 
 ### Subnet
 
@@ -39,9 +34,7 @@ A **subnet** divides an IP network into smaller logical networks.
 
 **Example:**
 
-```text
-192.168.1.0/24
-```
+    192.168.1.0/24
 
 ### Default Gateway
 
@@ -53,22 +46,20 @@ The **default gateway** is the device used to forward traffic from the local net
 
 **Example:**
 
-```text
-example.com → IP address
-```
+    example.com → IP address
 
 ---
 
 ## 2. Common Network Protocols
 
-| Protocol  | Purpose                                    |
-| --------- | ------------------------------------------ |
-| **TCP**   | Reliable, connection-oriented transport    |
-| **UDP**   | Connectionless transport with low overhead |
-| **HTTP**  | Web communication                          |
-| **HTTPS** | HTTP secured using TLS                     |
-| **DNS**   | Domain-name resolution                     |
-| **SSH**   | Secure remote administration               |
+| Protocol | Purpose |
+|---|---|
+| **TCP** | Reliable, connection-oriented transport |
+| **UDP** | Connectionless transport with low overhead |
+| **HTTP** | Web communication |
+| **HTTPS** | HTTP secured using TLS |
+| **DNS** | Domain-name resolution |
+| **SSH** | Secure remote administration |
 
 ---
 
@@ -78,9 +69,7 @@ example.com → IP address
 
 Displays network interfaces and assigned IP addresses.
 
-```bash
-ip addr
-```
+    ip addr
 
 **Practical verification:** Verified on the Kali Linux workstation.
 
@@ -90,9 +79,7 @@ ip addr
 
 Tests basic network connectivity.
 
-```bash
-ping -c 4 127.0.0.1
-```
+    ping -c 4 127.0.0.1
 
 **Result:** 4 packets transmitted, 4 received, 0% packet loss.
 
@@ -102,9 +89,7 @@ ping -c 4 127.0.0.1
 
 Displays network sockets and listening ports.
 
-```bash
-ss -tuln
-```
+    ss -tuln
 
 **Practical verification:** Command executed successfully on Kali Linux.
 
@@ -114,9 +99,7 @@ ss -tuln
 
 Displays the network path to a destination.
 
-```bash
-traceroute 8.8.8.8
-```
+    traceroute 8.8.8.8
 
 **Practical verification:** Command executed successfully.
 
@@ -126,9 +109,7 @@ traceroute 8.8.8.8
 
 Queries DNS information for a domain.
 
-```bash
-nslookup example.com
-```
+    nslookup example.com
 
 **Practical verification:** DNS resolution verified successfully.
 
@@ -138,9 +119,7 @@ nslookup example.com
 
 Displays network interface configuration.
 
-```bash
-ifconfig
-```
+    ifconfig
 
 > **Note:** `ifconfig` is a legacy utility. The modern alternative is `ip`.
 
@@ -150,12 +129,12 @@ ifconfig
 
 Networking knowledge is essential for:
 
-* Network reconnaissance
-* Attack-surface identification
-* Traffic analysis
-* Service discovery
-* Incident investigation
-* Security troubleshooting
+- Network reconnaissance
+- Attack-surface identification
+- Traffic analysis
+- Service discovery
+- Incident investigation
+- Security troubleshooting
 
 ---
 
@@ -163,37 +142,29 @@ Networking knowledge is essential for:
 
 The following screenshots document the commands executed on the **Kali Linux workstation**.
 
-| Evidence            | Command                |
-| ------------------- | ---------------------- |
-| `01-ip-addr.png`    | `ip addr`              |
-| `02-ping.png`       | `ping -c 4 127.0.0.1`  |
-| `03-ss.png`         | `ss -tuln`             |
-| `04-traceroute.png` | `traceroute 8.8.8.8`   |
-| `05-nslookup.png`   | `nslookup example.com` |
+| Evidence | Command |
+|---|---|
+| `01-ip-addr.png` | `ip addr` |
+| `02-ping.png` | `ping -c 4 127.0.0.1` |
+| `03-ss.png` | `ss -tuln` |
+| `04-traceroute.png` | `traceroute 8.8.8.8` |
+| `05-nslookup.png` | `nslookup example.com` |
 
 ---
 
 ## 6. Verification Status
 
-| Area                 | Status       |
-| -------------------- | ------------ |
-| Networking concepts  | ✅ Completed  |
-| Network protocols    | ✅ Documented |
-| Network commands     | ✅ Verified   |
-| Practical testing    | ✅ Completed  |
-| Evidence screenshots | ✅ Captured   |
-| Documentation        | ✅ Completed  |
+| Area | Status |
+|---|---|
+| Networking concepts | ✅ Completed |
+| Network protocols | ✅ Documented |
+| Network commands | ✅ Verified |
+| Practical testing | ✅ Completed |
+| Evidence screenshots | ✅ Captured |
+| Documentation | ✅ Completed |
 
 ---
 
 ## Conclusion
 
 The fundamental networking concepts and commonly used network utilities were documented and practically verified in the Kali Linux environment.
-
-````
-
-**Important:** Isko paste karne ke baad save/exit karo. Phir:
-
-```bash
-git diff -- Task-1-Foundations/notes/networking.md
-````
