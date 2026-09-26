@@ -198,9 +198,14 @@ This makes packet analysis useful for troubleshooting, network monitoring, incid
 The following screenshots were collected during the packet-analysis exercise:
 
 ```
+
 Task-2-Network-Security/screenshots/23-icmp-wireshark.png
 Task-2-Network-Security/screenshots/24-tcp-wireshark.png
 Task-2-Network-Security/screenshots/25-http-wireshark.png
+Task-2-Network-Security/screenshots/26-ftp-wireshark.png
+Task-2-Network-Security/screenshots/27-dns-wireshark.png
+Task-2-Network-Security/screenshots/28-syn-flood-wireshark.png
+
 ```
 
 ### Screenshot 23
@@ -214,6 +219,18 @@ TCP packet capture generated during TCP connectivity testing.
 ### Screenshot 25
 
 HTTP packet capture generated while accessing the target's Apache web service.
+
+### Screenshot 26
+
+FTP packet capture showing communication with the target's FTP service.
+
+### Screenshot 27
+
+DNS packet capture showing DNS traffic observed in the lab environment.
+
+### Screenshot 28
+
+TCP SYN traffic captured while performing a controlled SYN packet test against the target's HTTP service.
 
 ---
 
