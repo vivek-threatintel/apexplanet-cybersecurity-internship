@@ -1,4 +1,3 @@
-````
 # Active Reconnaissance Report
 
 ## Objective
