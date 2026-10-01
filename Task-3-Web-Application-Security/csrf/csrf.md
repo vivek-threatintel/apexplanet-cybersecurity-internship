@@ -46,8 +46,6 @@ The request was analyzed to understand how the application processes a password-
 
 ### Evidence
 
-![CSRF Password Change](36-csrf-password-change.png)
-
 **Evidence:** `36-csrf-password-change.png`
 
 The screenshot documents the password-change functionality examined during the CSRF exercise.
@@ -62,8 +60,6 @@ The purpose of this analysis was to understand how the application processes the
 
 ### Evidence
 
-![CSRF Low Security Source](37-csrf-source-low.png)
-
 **Evidence:** `37-csrf-source-low.png`
 
 The screenshot shows the source-code implementation at the Low security level.
@@ -77,8 +73,6 @@ The source code was also reviewed at the Medium security level.
 This allowed the request-handling implementation to be compared with the Low security implementation.
 
 ### Evidence
-
-![CSRF Medium Security Source](37-csrf-medium-source.png)
 
 **Evidence:** `37-csrf-medium-source.png`
 
@@ -136,4 +130,3 @@ The CSRF exercise examined the password-change functionality and the correspondi
 The comparison demonstrated how the application's request-processing and protection mechanisms can differ between security levels.
 
 All testing was performed against the local DVWA environment.
-```

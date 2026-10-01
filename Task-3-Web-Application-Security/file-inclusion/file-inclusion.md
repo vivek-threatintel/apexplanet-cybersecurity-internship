@@ -56,8 +56,6 @@ The PHP configuration was adjusted to allow the functionality required for the c
 
 ### Evidence
 
-![File Inclusion Enabled](38-file-inclusion-enabled.png)
-
 **Evidence:** `38-file-inclusion-enabled.png`
 
 The screenshot documents the File Inclusion functionality/configuration used during the exercise.
@@ -71,8 +69,6 @@ The DVWA File Inclusion module uses the `page` parameter to determine which reso
 The parameter was tested to understand how user-controlled input affects the file-loading behavior.
 
 ### Evidence
-
-![File Inclusion File Test](38-file-inclusion-file1.png)
 
 **Evidence:** `38-file-inclusion-file1.png`
 
@@ -88,15 +84,11 @@ A local system file was used as the controlled test target.
 
 ### Evidence
 
-![LFI Sensitive File](39-lfi-sensitive-file.png)
-
 **Evidence:** `39-lfi-sensitive-file.png`
 
 The screenshot demonstrates successful inclusion of a local file through the vulnerable File Inclusion functionality.
 
 A second screenshot documents the local file inclusion test:
-
-![Local File Inclusion](40-fi-local-file-inclusion.png)
 
 **Evidence:** `40-fi-local-file-inclusion.png`
 
@@ -109,8 +101,6 @@ Remote File Inclusion occurs when an application allows a remotely supplied reso
 For the controlled laboratory test, a PHP test file was hosted from a local HTTP server and supplied to the DVWA File Inclusion functionality.
 
 ### Evidence
-
-![RFI Test](40-rfi-test.png)
 
 **Evidence:** `40-rfi-test.png`
 
@@ -180,4 +170,3 @@ Local File Inclusion was tested using a local system file, while Remote File Inc
 The exercise also demonstrated the relationship between File Inclusion behavior and PHP configuration.
 
 All testing was performed against the local DVWA environment.
-```

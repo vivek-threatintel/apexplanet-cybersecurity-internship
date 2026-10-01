@@ -49,8 +49,6 @@ This demonstrated that the supplied input was being interpreted as part of the S
 
 ### Evidence
 
-![SQL Injection Demonstration](../screenshots/31-sql-injection.png)
-
 **Evidence:** `31-sql-injection.png`
 
 The screenshot shows the SQL Injection test and the resulting records returned by DVWA.
@@ -74,8 +72,6 @@ The `$id` value originates from user-controlled request data and is directly ins
 Because the input is not separated from the SQL syntax, specially crafted input can alter the intended behavior of the query.
 
 ### Evidence
-
-![SQL Injection Source Code](../screenshots/32-sqli-source.png)
 
 **Evidence:** `32-sqli-source.png`
 
@@ -103,8 +99,6 @@ $stmt->execute();
 The parameter is treated as data rather than being interpreted as part of the SQL syntax.
 
 ### Evidence
-
-![Prepared Statement](../screenshots/33-prepared-statement.png)
 
 **Evidence:** `33-prepared-statement.png`
 
@@ -162,5 +156,3 @@ The exercise showed how directly incorporating user-controlled input into an SQL
 Source-code analysis identified the vulnerable query construction, while the prepared-statement example demonstrated a safer method for handling database parameters.
 
 All testing was performed against the local DVWA environment.
-```
-

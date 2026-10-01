@@ -47,8 +47,6 @@ In the DVWA Stored XSS module, user-supplied input was submitted through the app
 
 ### Evidence
 
-![Stored XSS](34-stored-xss.png)
-
 **Evidence:** `34-stored-xss.png`
 
 The screenshot documents the Stored XSS test performed against the DVWA application.
@@ -62,8 +60,6 @@ Reflected XSS occurs when user-controlled input is immediately reflected by the 
 The DVWA Reflected XSS module was used to test this behavior.
 
 ### Evidence
-
-![Reflected XSS](35-reflected-xss.png)
 
 **Evidence:** `35-reflected-xss.png`
 
@@ -128,4 +124,3 @@ The XSS exercise demonstrated two common forms of Cross-Site Scripting: Stored X
 The practical tests showed the difference between input that is stored and later rendered and input that is reflected directly in an application's response.
 
 The exercise was performed against the local DVWA environment for controlled security testing.
-```

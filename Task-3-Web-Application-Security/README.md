@@ -131,4 +131,3 @@ Task-3-Web-Application-Security/
 This task provides practical exposure to common web application security vulnerabilities and defensive concepts.
 
 The completed sections currently cover SQL Injection, XSS, CSRF, and File Inclusion. Burp Suite and Web Security Headers will be documented as they are completed.
-```
